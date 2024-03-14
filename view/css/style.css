@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Form */
+
+form {
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px; 
+}
+
+.title {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+.inputboxs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-block: 20px;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    padding-left: 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color: #00949e;
+    transform: translateX(-10px) translateY(-20px);
+    font-size: 0,75em;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #00949e;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 30px;
+  }
+  
+  .forget {
+    padding-block: 20px;
+    color: #00949e !important;
+    font-weight: lighter;
+    font-size: small;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: #ffffff00;
+    border: none;
+    text-align: end;
+  }
+
+  .divBtn {
+    width: 100%;
+    height: 70px;
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 109px;
+    height: 51px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    color: #00949e;
+    border-radius: .5rem;
+    border-bottom: 2px solid #00949e;
+    border-right: 2px solid #00949e;
+    border-top: 2px solid #00949e;
+    border-left: 2px solid #00949e;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+   }
+   
+   .btn:hover {
+    border-top: 2px solid #02cbda;
+    border-left: 2px solid #02cbda;
+    border-bottom: 2px solid #0b4f53;
+    border-right: 2px solid #02cbda;
+    box-shadow: rgba(1, 173, 185, 0.4) 0px 3.5px, rgba(1, 173, 185, 0.3) 0px 7px;
+   }
+
+   .existLogin {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    text-align: center;
+   }
+
+   .existLogin a {
+    color: #00949e !important;
+    background-color: #ffffff00;
+    border: none;
+    text-decoration: underline;
+  }
+
+
+/* arquivo list.php */
+
+.header {
+    width: 100vw;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 10px 30px 10px
+}
+
+.header a {
+    width: auto;
+    margin-left: 0;
+}
+
+.header h1 {
+    margin-left: calc(50% - 176.5px);
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100% - 37px);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    height: 40%;
+    margin-inline: 100px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+@media (max-width: 380px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+}
