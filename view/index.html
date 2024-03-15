@@ -9,23 +9,23 @@
 <body>
     <div class="container">
         <main>
-            <form action="" method="post">
+            <form method="post" id="form">
                 <h1 class="title">POST com PHP</h1>
                 <div class="inputboxs">
                     <div class="inputbox">
-                        <input name="email" id="email" required="required" type="text"/>
+                        <input id="emailCad" autocomplete="username" name="emailCad" required="required" type="text"/>
                         <span>Email</span>
                         <i></i>
                     </div>
                     <div class="inputbox">
-                        <input name="password" id="password" required="required" type="password"/>
+                        <input id="passwordCad" autocomplete="current-password" name="passwordCad" required="required" type="password"/>
                         <span>Senha</span>
                         <i></i>
                     </div>
                 </div>
                 <a href="#" class="forget">Esqueceu a senha?</a>
                 <div class="divBtn">
-                    <button class="btn" type="submit">Enviar</button>
+                    <button class="btn" id="btnCad" type="submit">Enviar</button>
                 </div>
                 <p class="existLogin">Já tem uma conta?<a href="./screens/login.html">Login</a></p>
             </form>
